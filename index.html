@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <script>
+        AOS.init();
+    </script>
+    <!-- <div class="starter">
+        <h1 class="starter__title">Chào mừng đến với Cửa Hàng Gundam!</h1>
+        <p class="starter__title">Khám phá thế giới Gundam với những mô hình và sản phẩm tuyệt vời.</p>
+        <button class="starter__btn" onclick="toggleBodyy()">Khá Phá Ngay</button>
+    </div> -->
+
+    <div id="Content">
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="image/1.jpg">
+                </div>
+                <div class="item">
+                    <img src="image/2.jpg">
+                </div>
+                <div class="item">
+                    <img src="image/3.jpg">
+                </div>
+                <div class="item">
+                    <img src="image/4.jpg">
+                </div>
+            </div>
+            <!-- button prev va next -->
+            <div class="buttons">
+                <button id="prev"></button>
+                <button id="next"></button>
+            </div>
+            <!-- dots -->
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="about_us">
+            <div class="about_us-desc">WHO ARE WE <i class="fa-solid fa-question"></i></div>
+            <div class="about_us-item">
+                <div class="about_us__item2" data-aos="zoom-out-right" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" data-aos-delay="0">
+                    <video height="300px" controls autoplay muted loop>
+                        <source src="gundam.mp4" type="video/mp4" title="gundam trailer">
+                    </video>
+                </div>
+                <div class="about_us__item1" data-aos="zoom-out-left" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" data-aos-delay="300">
+                    <div class="about_us__item1-one">
+                        About Us
+                    </div>
+                    <div class="about_us__item1-two">
+                        At Gundam.shop, we are passionate fans of the iconic Gundam franchise, captivating audiences
+                        since
+                        1979. Our mission is to share the wonder of Gundam with everyone, providing a space for fans
+                        at all
+                        levels,
+                        from beginners to dedicated collectors.
+
+                        Join us as we explore the vast universe of Gundam, where technology, war, and humanity
+                        intertwine to
+                        create
+                        some of the most compelling narratives in anime history.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catagories">
+            <div class="catagories__desc">PRODUCT CATAGORIES <i class="fa-solid fa-shop"></i></div>
+            <div class="catagories__item">
+                <div class="catagories__item-box" data-aos="fade-up" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" data-aos-delay="0">
+                    <img src="./image/box1_text.jpg" alt="MÔ HÌNH GUNDAM">
+                    <a href="" class="text">TOYS, FIGURE</a>
+                </div>
+                <div class="catagories__item-box" data-aos="fade-up" data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" data-aos-delay="300" data-aos-easing="ease-in-sine">
+                    <img src="./image/box2_text.jpg" alt="MÔ HÌNH GUNDAM">
+                    <a href="" class="text">TOOL KIT</a>
+                </div>
+            </div>
+        </div>
+
+        <div class=" wrap">
+            <div class="item">box1</div>
+            <div class="item">box2</div>
+            <div class="item">box3</div>
+            <div class="item">box4</div>
+            <div class="item">box5</div>
+            <div class="item">box6</div>
+        </div>
+        <div class="contact_box">
+            <h1>Receive the latest promotional information <i class="fa-solid fa-envelope"></i></h1>
+            <h2>Leave your email to receive the latest promotional information about us</h2>
+            <input type="email" id="emailInput" placeholder="Email" required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}" title="Vui lòng nhập địa chỉ email hợp lệ">
+            <button id="submitButton"><i class="fa-solid fa-paper-plane"></i></button>
+            <div class="result" id="resultContainer"></div>
+            <div id="toast"></div>
+            <script src="app.js"></script>
+        </div>
+</body>
+
+</html>
